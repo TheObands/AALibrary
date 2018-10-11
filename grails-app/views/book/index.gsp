@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="layout" content="main" />
+        <meta name="layout" content="my_main" />
         <g:set var="entityName" value="${message(code: 'book.label', default: 'Book')}" />
         <title><g:message code="default.list.label" args="[entityName]" /></title>
     </head>
@@ -21,7 +21,7 @@
             <f:table collection="${bookList}" />
 
             <div class="pagination">
-                <g:paginate total="${bookCount ?: 0}" />
+                <g:paginate total="${bookCount ?:  0}" />
             </div>
         </div>
     </body>
